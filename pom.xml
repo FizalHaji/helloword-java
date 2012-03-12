@@ -1,48 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  
-  <groupId>com.sychip.helloworld</groupId>
-  <artifactId>helloworld</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
-  <url>${HUDSON_URL}</url>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>cn.com.sychip.helloworld</groupId>
+    <artifactId>helloworld</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>helloworld</name>
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- A workaround for a bug in PMD -->
+        <targetJdk>1.6</targetJdk>
+    </properties>
 
-    <build>
-	    <sourceDirectory>src/main</sourceDirectory>  
-        <testSourceDirectory>src/test</testSourceDirectory>  
-        <outputDirectory>target/classes</outputDirectory>  
-        <testOutputDirectory>target/test-classes</testOutputDirectory>
-        <plugins>
-            <plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-site-plugin</artifactId>
-				<version>3.0-beta-2</version>
-				<configuration>
-				 <reportPlugins>
-					  <plugin>
-						   <groupId>org.apache.maven.plugins</groupId>
-						   <artifactId>maven-checkstyle-plugin</artifactId>
-						   <version>2.4</version>
-						   <configuration>
-							<configLocation>
-							  $src/main/config/checkstyle.xml
-							</configLocation>
-						   </configuration>
-					  </plugin>
-				 </reportPlugins>
-				</configuration>
-		   </plugin>
-        </plugins>
-    </build>
-	<dependencies>
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit-dep</artifactId>
-            <version>4.10</version>
-           <!-- <scope>test</scope> -->
-        </dependency>
-    </dependencies>
-
-  
+    <modules>
+        <module>src</module>
+    </modules>
+    
 </project>
