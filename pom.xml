@@ -13,5 +13,9 @@
     </properties>
 
 
-    
+ <modules>
+        <module>src\main\module1</module>
+		<module>src\main\module2</module>
+ </modules>
+
 </project>
