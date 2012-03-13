@@ -29,4 +29,5 @@ When you're done:
 第二部git push //提交到远程
 
 //checkstyle成功，但是去掉了test代码，不知为什么maven总是先编译，然后才进行checkstyle检查
+//findbugs成功，但是没有发现错误 。配置文件中不findbugs也会自动生成findbugs代码，如果在jenkins中配置了findbugs
  
