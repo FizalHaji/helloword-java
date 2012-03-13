@@ -27,4 +27,6 @@ When you're done:
 //命令 
 第一步git commit -a -m "评论" //提交到本地
 第二部git push //提交到远程
+
+//checkstyle成功，但是去掉了test代码，不知为什么maven总是先编译，然后才进行checkstyle检查
  
