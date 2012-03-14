@@ -16,6 +16,7 @@
  <modules>
         <module>src\main\module1</module>
 		<module>src\main\module2</module>
+		<module>src\main\module3</module>
  </modules>
 
 </project>

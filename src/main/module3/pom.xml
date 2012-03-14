@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.sychip.helloworld</groupId>
   <artifactId>module3</artifactId>
-  <packaging>bin</packaging>
+  <version>0.01</version>
     <build>
 	    <sourceDirectory>.</sourceDirectory>  
         <testSourceDirectory>test</testSourceDirectory>  
