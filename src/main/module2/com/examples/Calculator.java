@@ -1,28 +1,32 @@
-package andycpp;
+package com.examples;
+
 public class Calculator{
-    private static int result; // ¾²Ì¬±äÁ¿£¬ÓÃÓÚ´æ´¢ÔËĞĞ½á¹û
+    private static int result;
+
     public void add(int n){
 	result = result + n;
 	}
+
 	public void substract(int n){
-	result = result - 1; //Bug: ÕıÈ·µÄÓ¦¸ÃÊÇ result =result-n
+	result = result - n;
 	}
+
 	public void multiply(int n){
-	} // ´Ë·½·¨ÉĞÎ´Ğ´ºÃ
+     	result = result * n;
+	}
+
 	public void divide(int n){
 	result = result / n;
 	}
+
 	public void square(int n){
 	result = n * n;
 	}
 
-	public void squareRoot(int n) {
-	for (; ;) ; //Bug : ËÀÑ­»·
-	}
-
-	public void clear() { // ½«½á¹ûÇåÁã
+	public void clear() { // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	result = 0;
 	}
+
 	public int getResult(){
 	return result;
 	}
